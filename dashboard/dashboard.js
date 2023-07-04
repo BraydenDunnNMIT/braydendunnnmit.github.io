@@ -18,7 +18,7 @@ function typeAnimationAndRedirect() {
       // Add delay before redirecting
       setTimeout(() => {
         // Redirect to the new page
-        window.location.href = "ControlPanel/ControlPanel.html";
+        window.location.href = "../ControlPanel/ControlPanel.html";
       }, 1500);
     }
 
