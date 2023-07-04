@@ -19,6 +19,7 @@ function typeAnimationAndRedirect() {
       setTimeout(() => {
         // Redirect to the new page
         window.location.href = "../ControlPanel/ControlPanel.html";
+        ;
       }, 1500);
     }
 
