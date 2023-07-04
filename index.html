@@ -6,14 +6,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Control</title>
+  <title>Authorization</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body style="background-color: black;">
-  <script type="text/javascript">
-    window.onload = function() {
-      window.location.href = "PersonalWebsite/WebsiteCode/HomePage/index.html";
-    };
-  </script>
+<body>
+  <div id="login-container">
+    <h1><span id="welcome-text"></span></h1>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="validateLogin()">Login</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
