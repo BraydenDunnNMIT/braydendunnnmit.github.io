@@ -24,7 +24,7 @@ function validateLogin() {
 
   if (username === storedUsername && password === storedPassword) {
     alert("Login successful!");
-window.location.href = "PersonalWebsite/WebsiteCode/dashboard/dashboard.html"; // Redirect to the dashboard.html
+window.location.href = window.location.href = "PersonalWebsite/dashboard/dashboard.html"; // Redirect to the dashboard.html
   } else {
     alert("Invalid credentials. Please try again.");
   }
