@@ -1,0 +1,59 @@
+
+/* My styling page that styles the HTML using CSS. */ 
+
+a.click_link1{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: outset navajowhite 5px;
+    font-size: 30px;
+    position:absolute;
+    bottom: 15px;
+    right: 35%;
+    border-radius: 1em;
+    margin: auto;
+}
+html {
+    background-color: black;
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+background-image: url("static.gif");
+background-size: cover;
+}
+
+
+.title1{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    margin: auto;
+    top: 3px;
+    left: 30%;
+
+}
+
+.login-screen {
+    color: red;
+    font-size: 35px;
+    position:fixed;
+    margin: auto;
+    top: 15%;
+    left: 38%;
+}
+
+.login-screen1 {
+    position:relative;
+    margin: auto;
+    top: 30%;
+    left: 40%;
+
+}
+
+.submit-btn1 {
+    font-size: 50px;
+    position: relative;
+}
+
