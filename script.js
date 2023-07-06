@@ -22,11 +22,12 @@ function validateLogin() {
   var storedUsername = "Administrator";
   var storedPassword = "Pa$$w0rd";
 
+  //Check if password and user are the same 
   if (username === storedUsername && password === storedPassword) {
-    alert("Login successful!");
+    alert("Authorization granted.");
 window.location.href = window.location.href = "dashboard/dashboard.html"; // Redirect to the dashboard.html
   } else {
-    alert("Invalid credentials. Please try again.");
+    alert("Authorization denied.");
   }
 }
 

@@ -24,10 +24,6 @@ body {
     transition: transform 0.3s;
   }
   
-  #go-to-page-button:hover {
-    transform: scale(1.1);
-  }
-  
   #ascii-art {
     color: green;
     font-size: 20px;

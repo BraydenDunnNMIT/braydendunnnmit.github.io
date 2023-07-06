@@ -2,7 +2,7 @@
 const button = document.getElementById("go-to-page-button");
 
 // Define the text for the typing animation
-const text = "{Generating new page master <3";
+const text = "{Generating Master's about me page";
 
 // Function to simulate typing animation and redirect
 function typeAnimationAndRedirect() {
@@ -18,7 +18,7 @@ function typeAnimationAndRedirect() {
       // Add delay before redirecting
       setTimeout(() => {
         // Redirect to the new page
-        window.location.href = "../ControlPanel/ControlPanel.html";
+        window.location.href = "../AnimationPage/animation.html";
         ;
       }, 1500);
     }
