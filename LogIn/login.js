@@ -1,5 +1,5 @@
 function typeWelcomeText() {
-  var text = "Welcome back master";
+  var text = "Welcome <3";
   var welcomeTextElement = document.getElementById("welcome-text");
   var delay = 100; // Delay in milliseconds
 
@@ -25,7 +25,7 @@ function validateLogin() {
   //Check if password and user are the same 
   if (username === storedUsername && password === storedPassword) {
     alert("Authorization granted.");
-window.location.href = window.location.href = "dashboard/dashboard.html"; // Redirect to the dashboard.html
+window.location.href = window.location.href = "../index.html"; // Redirect to the homepage
   } else {
     alert("Authorization denied.");
   }

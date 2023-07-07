@@ -1,22 +1,23 @@
-<!-- Redirects user to main page -->
-
-
-<!-- Redirects user to my actual start of the homepage (needed for github pages) -->
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Authorization</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Navigation Menu</title>
+  <link rel="icon" type="images/x-icon" href="https://icon-library.com/images/free-lock-icon/free-lock-icon-11.jpg" />
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <div id="login-container">
-    <h1><span id="welcome-text"></span></h1>
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="validateLogin()">Login</button>
+  <div class="container">
+    <div class="logo">
+      <h1 id="logo-text">Infallible.host</h1>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="LogIn/login.html">Log In</a></li>
+        <li><a href="AboutMe/About.html">About Me</a></li>
+        <li><a href="Animation/Animation.html">CSS Animations</a></li>
+      </ul>
+    </div>
   </div>
-
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
