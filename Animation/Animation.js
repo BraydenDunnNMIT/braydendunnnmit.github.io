@@ -18,7 +18,7 @@ function typeAnimationAndRedirect() {
       // Add delay before redirecting
       setTimeout(() => {
         // Redirect to the new page
-        window.location.href = "../index.html";
+        window.location.href = "../index";
         ;
       }, 1500);
     }

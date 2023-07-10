@@ -25,7 +25,7 @@ function validateLogin() {
   //Check if password and user are the same 
   if (username === storedUsername && password === storedPassword) {
     alert("Authorization granted.");
-window.location.href = window.location.href = "../index.html"; // Redirect to the homepage
+window.location.href = window.location.href = "../index"; // Redirect to the homepage
   } else {
     alert("Authorization denied.");
   }
