@@ -49,6 +49,7 @@ body::before {
 .box {
     width: 100%;
     max-width: 800px;
+    max-height: 400px; /* Max height for scrollable content */
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     color: #ffffff;
     border: 2px double #d1e8e2; /* Light gray border */
@@ -57,6 +58,7 @@ body::before {
     box-sizing: border-box;
     box-shadow: 0 0 10px #f56476; /* Coral box shadow */
     text-align: center; /* Center the text */
+    overflow-y: auto; /* Enable vertical scroll */
 }
 
 /* Title Style */
@@ -72,6 +74,7 @@ body::before {
     line-height: 1.6;
     white-space: pre-wrap; /* Preserve white space and line breaks */
     margin-bottom: 20px;
+    text-align: center; /* Center the poem text */
 }
 
 /* Button Style */

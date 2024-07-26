@@ -7,29 +7,15 @@
 
 /* Body Style */
 body {
-  background: linear-gradient(135deg, #206a5d, #68b0ab); /* Gradient background */
+  background: linear-gradient(135deg, #206a5d, #68b0ab); /* Gradient from teal to light teal */
   color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
   margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/cubes.png') repeat; /* Pattern overlay */
-  opacity: 0.1;
-  z-index: 1;
 }
 
 /* Container Style */
@@ -41,21 +27,19 @@ body::before {
   min-height: 100vh;
   box-sizing: border-box;
   padding: 20px;
-  position: relative;
-  z-index: 2;
 }
 
 /* Box Style */
 .box {
   width: 100%;
   max-width: 800px;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
   color: #ffffff;
-  border: 2px double #d1e8e2; /* Light gray border */
+  border: 2px double #68b0ab; /* Light teal border */
   padding: 20px;
   margin-top: 20px;
   box-sizing: border-box;
-  box-shadow: 0 0 10px #f56476; /* Coral box shadow */
+  box-shadow: 0 0 10px #ff6f61; /* Coral box shadow */
   text-align: center; /* Center the text */
 }
 
@@ -64,23 +48,28 @@ body::before {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px; /* Add margin below the title */
+  color: #ff6f61; /* Coral color */
 }
 
-/* Button Style */
-.github-button {
+/* Link Style */
+li {
+  list-style-type: none;
+}
+
+a {
   display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
   color: #ffffff;
-  border: 3px double #f56476; /* Coral border */
+  border: 3px double #d1e8e2; /* Light gray border */
   text-decoration: none;
-  margin-top: 20px;
   font-size: 18px;
   transition: transform 0.3s, background-color 0.3s;
   border-radius: 5px;
+  margin-top: 20px; /* Adjust margin for spacing */
 }
 
-.github-button:hover {
+a:hover {
   transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #f56476; /* Coral hover effect */
 }
