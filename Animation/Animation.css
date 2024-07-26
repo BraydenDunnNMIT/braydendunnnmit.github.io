@@ -1,38 +1,62 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Style */
 body {
-    background-color: black;
-    color: white;
-    font-family: monospace;
-    overflow: hidden;
-  }
-  
-  #dashboard-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  #go-to-page-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
-  }
-  
-  #ascii-art {
-    color: green;
-    font-size: 20px;
-    animation: blink 1.5s infinite;
-  }
-  
-  @keyframes blink {
-    50% {
+  background: linear-gradient(135deg, #206a5d, #68b0ab); /* Gradient from teal to light teal */
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container Style */
+#dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Button Style */
+#go-to-page-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid #68b0ab; /* Light teal border */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  color: #68b0ab; /* Light teal text */
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+#go-to-page-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* ASCII Art Style */
+#ascii-art {
+  color: #ff6f61; /* Coral text */
+  font-size: 20px;
+  animation: blink 1.5s infinite;
+}
+
+/* Blink Animation */
+@keyframes blink {
+  50% {
       color: transparent;
-    }
   }
-  
+}

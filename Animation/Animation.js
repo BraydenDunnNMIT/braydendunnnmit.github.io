@@ -11,7 +11,7 @@ function typeAnimationAndRedirect() {
 
   const interval = setInterval(() => {
     animatedText += text[index];
-    button.innerText = animatedText + "}";
+    button.innerText = animatedText + "/";
 
     if (index === text.length - 1) {
       clearInterval(interval);
