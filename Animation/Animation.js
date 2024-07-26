@@ -2,7 +2,7 @@
 const button = document.getElementById("go-to-page-button");
 
 // Define the text for the typing animation
-const text = "{Booting up device .    .    .";
+const text = "Love you charlie <3";
 
 // Function to simulate typing animation and redirect
 function typeAnimationAndRedirect() {
