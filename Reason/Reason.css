@@ -49,16 +49,14 @@ body::before {
 .box {
     width: 100%;
     max-width: 800px;
-    max-height: 400px; /* Max height for scrollable content */
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     color: #ffffff;
     border: 2px double #d1e8e2; /* Light gray border */
     padding: 20px;
-    margin-top: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 10px #f56476; /* Coral box shadow */
     text-align: center; /* Center the text */
-    overflow-y: auto; /* Enable vertical scroll */
+    overflow: hidden; /* Remove scroll */
 }
 
 /* Title Style */
@@ -68,13 +66,17 @@ body::before {
     margin-bottom: 20px; /* Add margin below the title */
 }
 
-/* Poem Style */
-#poem-text {
+/* Reasons List Style */
+#reasons-list {
     font-size: 20px;
     line-height: 1.6;
-    white-space: pre-wrap; /* Preserve white space and line breaks */
-    margin-bottom: 20px;
-    text-align: center; /* Center the poem text */
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#reasons-list li {
+    margin-bottom: 20px; /* Space between list items */
 }
 
 /* Button Style */
